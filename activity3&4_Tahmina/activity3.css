@@ -1,0 +1,91 @@
+/* ACTIVITY 3 */
+.img1, .img2, .img3{position: relative; width: 30%; margin-left: 2%;}
+.img1{filter: invert(100%)}
+.img2{filter: blur(4px)}
+.img3{filter: sepia(100%)}
+.photo_d1{display: block; float: right; position: absolute; text-align: left; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,1); border: solid 5px black; box-shadow: 2px 2px 5px white; padding: 1em 1em;}
+
+.photo_d2{text-align: center; font-size: 1.2em; color: pink; background-color: rgba(10,10,10,0.8); box-shadow: 2px 2px 5px white; position: absolute; padding: 1em;}
+.link_d2{display: block; background-color: magenta; margin-top: 1em; padding: 0.2em; border-radius: 9px; text-decoration: none;}
+.link_d2:hover{background-color: lightblue; top:30%, left:10%; right:10%; box-shadow: 0px 0px 5px 2px gray;}
+
+.img3{
+    filter:sepia(40%);
+    background-image: linear-gradient(to right, rgba(255,0,0,0.6),rgba(0,0,0,0.6));
+  }
+  
+  .mid{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left:160px;
+    margin: 0;
+    padding: 0;
+    text-align:;
+    text-shadow: 5px 5px 10px #fff0;
+    font-size: 5rem;
+    
+  }
+  .top{
+    position: absolute;
+    width: 80%;
+    top:650px;
+    left:10px;
+    margin: 0;
+    padding: 0;
+    text-align:;
+    text-shadow: 5px 5px 10px rgba(166, 30, 30, 0);
+    size: 3em;
+    
+  }
+
+/* ACTIVITY 4:ANIMATION */
+.animation_container{
+    border: ridge 20px gray;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+    overflow-x: hidden;
+    animation-delay: 10s filter: invert(100%);
+  }
+  
+  .love{width: 100%; animation-name: moveLove; animation-delay: 7s}
+ 
+  @-webkit-keyframes moveLove{
+    -webkit-transform: scale(0.5);
+    opacity: 0;
+    -webkit-filter: invert(70%);
+    }
+  
+  .heart1, .heart2, .heart3, .heart4, .heart5, .heart6, .heart7, .heart8, .heart9, .heart10, .heart11, .heart12{position: absolute;}
+  .heart1{width: 5%; top:60%; left: 60%; animation: moveHeart 15s infinite; }
+  .heart2{width: 6%; top:40%; left: 40%; animation: moveHeart 15s infinite; }
+  .heart3{width: 7%; top:50%; left: 50%; animation: moveHeart 15s infinite; }
+  .heart4{width: 8%; top:20%; left: 20%; animation: moveHeart 15s infinite; }
+  .heart5{width: 9%; top:30%; left: 30%; animation: moveHeart 15s infinite; }
+  .heart6{width: 11%; top:70%; left: 30%; animation: moveHeart 15s infinite; }
+  .heart7{width: 9%; top:80%; left: 55%; animation: moveHeart 15s infinite; }
+  .heart8{width: 4%; top:87%; left: 85%; animation: moveHeart 15s infinite; }
+  .heart9{width: 9%; top:63%; left: 85%; animation: moveHeart 15s infinite; }
+  .heart10{width: 15%; top:67%; left: 70%; animation: moveHeart 15s infinite; }
+  .heart11{width: 20%; top:55%; left: 57%; animation: moveHeart 15s infinite; }
+  .heart12{width: 13%; top:48%; left: 37%; animation: moveHeart 15s infinite; }
+  @keyframes moveHeart {
+    0%{opacity: 0.8; transform: translate(0,0);}
+    20%{opacity: 1;}
+    40%{opacity: 0.5;}
+    60%{opacity: 0.3; transform: translate(200%, 50%);}
+    80%{opacity: 0.7;}
+    100%{opacity: 0.9;transform: translate(-200%, -1%);}
+  }
+  .animation_p1{position: absolute; font-family: fantasy; top: 30%; bottom: 30%; text-align: left; background-color: transparent; left: 10%; right: 10%; font-size: 2em; color: red; animation: Cheese 4s forwards;}
+  @keyframes Cheese{
+    0%{transform: scale(0); color:green; text-shadow: 5px 5px 2px black;}
+    50%{transform: scale(2); color:gray; text-shadow: -5px -5px 2px black;}
+  }
+  
+  .camera{width: 10%; position: absolute; font-family: fantasy; top: 60%; bottom: 50%; text-align: left; background-color: transparent; left: 10%; right: 10%; font-size: 2em; color: red; animation: moveCamera 4s forwards;}
+  @keyframes moveCamera{
+    0%{transform: scale(0); color:green; text-shadow: 5px 5px 2px black;}
+  }

@@ -1,59 +1,106 @@
 <!DOCTYPE html>
-<html lang="eng" dir="ltr">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3 - Tahmina Munni</title>
+
+    <style>
+        .intro{background-color: gray;}
+        h2{color: green;}
+        p{background-color:pink;}
+        em{color:blue;}
+    </style> <!--Internal css: this style will override the other style in below-->
+
+    <link rel="stylesheet" href="activity.css">  <!--CSS link-->
+
+</head>
+<body>
+    <h1 style="color:red" class="title"> Potatoes</h1>
+    <p style="background-color: yellow;">There are dozens of 
+        different potato varities. they are usually described as early, second early and main crop.
+    </p> <!--this style is not reccomended-->
     
-    <head>
 
-        <meta charset="utf-8">
-        <title>Basics CSS activity</title>
+    <p class="intro">There are dozens of 
+        different potato varities. they are usually described as early, second early and main crop.
+     </p>
 
+    <h2 class="subtitle">Types of potatoes</h2>
+    <p>There are <em> 20 types </em>of different potatoes</p>
+
+    <hr> <!--horizontal line:  below text shadow example with id # -->
+    <h1 id="name1">Tahmina Munni</h1>
+    <h1 id="name2">Tahmina Munni</h1>
+    <h1 id="name3">Tahmina Munni</h1>
+    <h1 id="name4">Tahmina Munni</h1>
+    <h1 id="name5">Tahmina Munni</h1>
+
+    <!--Box shadow-->
+    <hr>
+    <div class="box1"></div>
+    <br>
+    <div class="box2"></div>
+
+
+    <hr>
+    <h2>Margin</h2>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+
+    <hr> <!--Padding-->
+    <h1>Padding</h1>
+    <p class="p1" > There are dozens of different potato varities. they are usually described as early, second early and main crop.</p>
+    <p class="p2" > There are dozens of different potato varities. they are usually described as early, second early and main crop.</p>
+    <p class="p3" > There are dozens of different potato varities. they are usually described as early, second early and main crop.</p>
+    <p class="p4" > There are dozens of different potato varities. they are usually described as early, second early and main crop.</p>
+    
+
+    <h2> Layout</h2>
+     <header class="nature"> Nature </header>
+
+     <main class="img_container"> <!--images-->
+
+         <div class="row1">
+             <img src="images/image1.jpg" alt="image1" title=" Welcome summer time" class="image1">
+             <img src="images/image2.jpg" alt="image2" title="Image of nort pole" class="image2">
+
+         </div>
+
+         <div class="row2">
+            <img src="images/image3.jpg" alt="image3" title=" Welcome summer time" class="image3">
+            <img src="images/image4.jpg" alt="image4" title="Image of nort pole" class="image3">    
+        </div>
+
+        <div class="row3"> <!--Pcontent-->
+            <img src="images/image4.jpg" alt="image4" title="Image of nort pole" class="image3"> 
+            <p class="pContent">There are dozens of different potato varities. they are usually described as early,</p>   
+
+        </div>
+    </main>
+
+    <footer class="contact">
+        <div class="contact1"> Copyright </div>
+        <div class="contact2"> email & phone No. </div>
+        <div class="contact3"> Social Media</div>
+
+
+        <!--Colors-->
+        <h2> colors using RGB values</h2>
+        <span class="g1">G</span>
+        <span class="g2">o</span>
+        <span class="g3">o</span>
+        <span class="g4">g</span>
+        <span class="g5">l</span>
+        <span class="g6">l</span>
         
-
-    </head>
-
-    <body>
-
-        <div class="heading">
-            <h1>Activitty 3</h1>
-            <div id="author">By Tahmina Munni</div> 
-        </div>
-
-        <hr>
-        
-
-        </div>
-
-        <div class="box">
-            <figure >
-
-                <div class="container">
-
-                    <img src="img/img1.jpg" alt="flower" class="right" height="300" width="430" >
-                    <div class="text-block">
-                        <p>What a beautiful sunrise</p>
-
-                </div>
-            </div>
-                
-                <a href="#" title=""><img src="img/img2.jpg" alt="flower"  id="left"height="300" width="430"class="img2"></a>
-                <a href="#" title=""><img src="img/img3.jpg" alt="flower" id="center" height="300" width="430"class="img3"></a>
-                
-                
-                <figcaption> Images downloaded from www.pixel.com</figcaption>
-
-            </figure>
-            
-        </div>
-
-        <hr>
-
-        <footer>
-
-            Web Technology - class Activity 3: Basic CSS elements
-
-        </footer>
+    </footer>
 
 
-
-    </body>
-
+</body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 6</title>
+</head>
+<body>
+    <h1>Tahmina Munni: Activity 6</h1>
+    <script type="text/javascript">
+
+// 1. if, else if, else statement
+
+        let num = prompt("Enter a value, could be a string or a number");
+          num = parseInt(num);
+          while(isNaN(num)){
+            num = prompt(`${num} is not a number.Its a string. Please enter again`);
+              num =  parseInt(num);
+        }
+
+        if(num<0){
+          console.log(`${num} is a negative number.`);
+        }
+        else if(num>=0){
+          console.log(`${num} is positive number`);
+        }      
+        else{
+          console.log(`Invalid`);
+        }
+
+
+// 2. switch statement
+
+    let colors = ['Red' , 'Blue' , 'Green']
+
+    let color = prompt(`Pick a color (type a, b, or c) : \n a) Red \n b) Blue\n c) Green`);
+            color.toLowerCase();
+
+            switch(color)
+            {
+                case 'a':
+                console.log('You selected Red color');
+                break;
+                case 'b':
+                console.log('You selected Blue color');
+                break;
+                case 'c':
+                console.log('You selected Green color');
+                break;
+                default:
+                console.log('Color is not in the list!');
+            }
+
+        </script>
+  </body>
+</html>
+
+
+
+
+
+    

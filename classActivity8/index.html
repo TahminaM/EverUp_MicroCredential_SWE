@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 8</title>
+</head>
+<body>
+    <h1>Tahmina Munni: Class Activity 8 on Functions:</h1>
+    <script type="text/javascript">
+    
+
+       //Example 1: function without prm 
+       function msg(){
+           console.log("Hello!")
+       }
+
+
+       //Example 2:   print cout
+       function printCount(){
+           for(let i=3; i>=1; i-=1){
+               console.log(i)
+           }
+       }
+       
+
+       //Example 3:         
+       function greeting(name){
+               console.log(`Hello ${name}`)
+       }
+
+
+       //Example 4: func take a msg and converts value as an upper case        
+       function upperMsg(msg){
+           let upper = msg.toUpperCase();
+               console.log(upper)
+       }
+
+
+
+       //Example 5: define a fnc with 2 prm , print the first name with th initial letter of the last name
+       function greet(fname, lname){
+               console.log(`Hello ${fname} ${lname[0].toUpperCase()}`)
+       }
+
+
+       //Example 6:  print msg value numcounts time
+       function printMsg(message, numcount){
+           for (counter =0; counter<numcount; counter++){
+               console.log(`Counter ${counter} = ${message}`)
+           }
+       }
+
+
+
+       //Example 7: accept 2 prm, checkif both aare equal
+       function isSnakeEyes(dice1, dice2){
+           if (dice1===1 && dice2===1){
+               console.log("Snake eyes")
+           }
+           else{
+               cosole.log("Not a snake eyes")
+           }
+       }
+
+
+       //Example 8: without prm returns value
+       function sumXY(message, numcount){
+           let x=7, y=-3
+               return x+y;
+               console.log('Hello world') // does not return anything after return
+           }
+
+
+       //Example 9:takes a number as paremeter dubled the number and return the result
+       let Usernumber = parseInt(prompt("Enter a number: "))
+
+       function doubleNum(number){
+           let result = number * 2;
+           return result ;
+       }
+
+       let collectNum = doubleNum (Usernumber)
+
+
+
+       //Example 10: adds to prm and retun value
+       let a= 5/6, b=3, c=9,d=-5;
+
+       function sumnum(num1, num2){
+           let sum= num1+num2
+           return sum
+       }
+       let number1 = sumnum(10,d)
+       let number2 = sumnum(a,c)
+
+
+
+
+       //Example 11:
+       function isShortsWeather (temperature){
+           if (temperature >=75){return true;}
+           else {return false;}
+       }
+
+
+
+       //example 12: lastElement
+
+       function lastElement(arrayInput){
+           if (arrayInput === undefined){return null}
+           else if(arrayInput.length !==0){
+               let lastIndex = arrayInput.length -1;
+               return arrayInput[lastIndex]
+           }
+           else{return null}
+       }
+
+
+
+       //example : 13 Builtin function
+
+       let numPI = Math.PI
+       console.log (`PI value = ${numPI}`)
+       console.log (`PI value with Math.round()= ${Math.round (numPI)}`)
+       console.log (`PI value with Math.ceil()= ${Math.ceil(numPI)}`)
+       console.log (`PI value with Floor.ceil()= ${Math.Floor(numPI)}`)
+       console.log (`PI value with Math.trunc()= ${Math.trunc(numPI)}`)//exponent
+       console.log (`PI value with Math.pow()= ${Math.pow(numPI)}`)
+       console.log (`PI value with Math.sqrt()= ${Math.sqrt(numPI)}`)
+
+       console.log(`Math.Random= ${Math.random()}`);
+       console.log(`Math.Random= ${Math.random()}`); //Math.round(Math.random()*14)
+
+
+
+       //example:13 randomly genarate a number
+
+       function picknum(){
+           let pick = Math.random()*20;
+           return pick;
+       }
+
+
+
+       //ex:14: 10 to 20
+       function picknum(){
+           let pick =10 + Math.roound( Math.random()*10);
+           return pick;
+       }
+
+
+
+       //ex: 15 pick a color in an array
+       let colors=['red','Green', 'blue','yellow']
+
+       function colorpick(colorL){
+           let pick = Math.roound( Math.random()*lastIndex);
+           return pick;
+       }
+
+
+       //call fnc
+       pickedIndex = colorpick(color.lenght-1)
+       console.log(`the picked color is = ${colors[pickedIndex]}`)
+
+    
+    </script>  
+  </body>
+</html>

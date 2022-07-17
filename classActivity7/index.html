@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 7</title>
+</head>
+<body>
+    <h1>Tahmina Munni: Activity 7</h1>
+    <script type="text/javascript">
+
+
+
+//ex: 1 for loop to print on increasing counter from 0 to 4
+        for (let counter=0; counter<=4; counter++){
+            console.log(`The current counter is ${counter}`)
+        }
+
+//ex: 2 for loop to print even number
+        let num = parseInt(prompt("Enter a number betwen 0 to 90"))
+
+        for ( num=0; num<100; num++){
+            if(num%2 === 0)
+            console.log(`num is ${num}`)
+        }
+
+
+ //ex: 3 for loop to print number from 100 to 0
+ 
+        for ( let num1=100; num1>=0; num=num-10){                   
+                    console.log(`num is ${num}`)
+                }
+
+//ex: 4 for loop to print each item in an array
+        let cars =['Tesla', 'Mazda', 'BMW','dodge','porshe']
+        for ( let i=100; i<cars.length; i++){                   
+                    console.log(`car ${i+1} = {$car[i]} `)
+                }
+        
+
+//ex: 5 for loop to print each item in an array
+
+        let cars =['Tesla', 'Mazda', 'BMW','dodge','porshe']
+                for ( let eachCar of cars ){                   
+                            console.log(eachCar)
+                        }
+      
+
+
+//ex: 6 for loop to print each character in an loop
+
+        let myString ="World"
+                for ( let eachLetter of myString ){                   
+                            console.log(eachLetter)
+                        }
+
+
+//ex: 7 for loop to print odd and upper case
+let foods =['salad', 'rice', 'tofu','cheese','fries']
+                for ( let item =0; item<foods.length; item++ ){ 
+                        if((item+1)%2===0) {
+                            let itemUpper = foods[item].toUpperCase();             
+                            console.log(`I want some ${itemUpper}`)
+                        }
+                        else{
+                            console.log(`I want some ${foods[item]}`)
+                        }
+                    }
+
+
+
+//ex: 8 for loop to print a decrement from 30 to 0 and inner loop
+
+        for(let outerCounter = 1; outerCounter<=5; outerCounter++){
+            console.log(`Outer Loop count \t\t\t ${outerCounter}`)
+            for(let innerCounter = 30; innerCounter>=0; innerCounter-=10){
+                console.log(`inner Loop counter = ${innerCounter}`)
+            }
+        }
+
+
+
+//ex: 9 while loop
+            let initial =0;
+            while(initial<=4){
+                console.log(`The current count is = ${initial}`);
+                initial++
+            }
+
+
+//ex: 10 secrete number
+  
+     const SECRET = 8;
+     let numberUser = parseInt(prompt("Enter a number between 0 and 10"))
+     while(numberUser !== SECRET){
+        numberUser =parseInt(prompt("Wrong! guess another number"))
+     }
+
+
+//ex: 11 stop a decrement counter from 20 to 0, inclusive, when the counter reaches to 9
+
+        for (let counter = 20; counter >=0; counter --){
+            console.log(`Counter = ${counter}`)
+            if (counter===9){
+                break;
+            }
+        }
+
+
+//ex: 12 skip one count what prompt number is
+
+        let userPick = prompt("Enter a number between 0 and 10")
+        for (let counter = 0; counter <=10; counter ++){
+                    console.log(`Counter = ${counter}`)
+                    if (counter===userPick){
+                        continue;
+                    }
+                }
+        
+
+    </script>   
+  </body>
+</html>

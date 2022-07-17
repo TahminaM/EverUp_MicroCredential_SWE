@@ -93,7 +93,6 @@
             }
 
 
-
             //example: 6
 
             let password = prompt("Enter a password with 6+ character: ")
@@ -132,7 +131,51 @@
             console.log('invalid! ${password} password less than 6 char')
         }
 
-       // ex 9
+
+
+       //example 10
+      let rate = prompt('Enter a rate for "The Book""\n 1) excellent \n 2)good/average 3) Bored! \n Select a number from 1 to 3')
+      if(rate==='3'){
+        let comments = ('We are sorry that you find "the book" boring. Please comment: ')
+        console.log(`Thank you for your feedback: ${comments}`)
+      }
+      else if(rate==='1' || rate===='2'){
+        console.log(`Thank you for choosing "The Book"`)
+      }
+      else{
+        console.log(`INVALID RATE`)
+      }
+
+
+      //example 11
+      let age = 180;
+      if(age>=0 && age <= 7 || age>= 65 && age<=100){console.log(`FREE TICKETS`)}
+      else if(age>=8 && age <= 17){console.log(`$5 per ticket`)}
+      else if(age>=18 && age <= 65){console.log(`$8 per ticket`)}
+      else{console.log(`INVALID AGE!`)}
+
+
+      //example12
+      let colors = ['red','blue','green', 'yellow', 'orange']
+      let userPick = parseInt(prompt("Select a color from 1 to 5"))
+      let selectColor = colors[userPick -1]
+      switch (selectColor) {
+        case `red`:
+          console.log(`The selected color is red!`)
+          break;
+        case `blue`:
+          console.log(`The selected color is blue!`)
+          break;
+        case `green`:
+          console.log(`The selected color is green!`)
+        case `yellow`:
+          console.log(`The selected color is yellow!`)
+        case `orange`:
+          console.log(`The selected color is orange!`)
+        default:
+          console.log(`INVALID!`)
+      }
+
 
 
 

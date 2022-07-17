@@ -10,26 +10,27 @@
     <h1>Tahmina Munni: Activity 6</h1>
     <script type="text/javascript">
 
+
+
 // 1. if, else if, else statement
 
         let num = prompt("Enter a value, could be a string or a number");
-          num = parseInt(num);
-          while(isNaN(num)){
-            num = prompt(`${num} is not a number.Its a string. Please enter again`);
-              num =  parseInt(num);
-        }
 
-        if(num<0){
-          console.log(`${num} is a negative number.`);
+        num = parseInt(num);
+
+        if (num < 0){
+          console.log(`${num} is a negative number`)
         }
-        else if(num>=0){
-          console.log(`${num} is positive number`);
-        }      
+        else if(num >= 0){
+          console.log(`${num} is a positive number`)
+        }
         else{
-          console.log(`Invalid`);
+          console.log(`${num} is a string.`)
         }
 
 
+
+          
 // 2. switch statement
 
     let colors = ['Red' , 'Blue' , 'Green']
@@ -51,6 +52,8 @@
                 default:
                 console.log('Color is not in the list!');
             }
+
+
 
         </script>
   </body>

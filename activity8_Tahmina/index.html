@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 7</title>
+    <title>Activity 8</title>
 </head>
 <body>
-    <h1>Tahmina Munni: Activity 7</h1>
+    <h1>Tahmina Munni: Activity 8</h1>
     <script type="text/javascript">
 
+
+
+// 1. checkName() function: without parameter/s or return value
+function checkName(){
+              var name = prompt("Enter a name");
+                prompt("Enter a name");
+
+                while(name == null || !isNaN(name)){
+                    name = prompt(`${name} is invalid! Enter a name again: .`);  
+                    name = prompt("Enter a name"); 
+                }
+
+                name.toUpperCase();
+                console.log(`Welcome ${name}`);
+            }
+
+
+//2. checkNum() function: without parameter/s but return value
+    function checkNum(){
+               while(name == null || isNaN(name)){
+                    var num = prompt("Enter a number");
+                }
+
+                if(num %2 == 0) {return true;}
+                else {return false;}  
+
+                prompt("Enter a name");
+            }
+
+
+//3. lottery() function: with parameter but no return value
+    function lottery(num){
+                for(var i = 0 ; i<num; i++){
+                    console.log(Math.floor(Math.random() * 100));
+                }
+            }
 
 
 

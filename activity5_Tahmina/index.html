@@ -7,51 +7,25 @@
   <body>
     <h1>Tahmina Munni: Activity 5</h1>
     <script type="text/javascript">
-      let number1 = 56;
-      let number2 = -80;
-      let number3 = 3 / 4;
-      let boolean1 = true;
 
-      let color = "beige"
-      let msg = "Hello World!"
+      // 1. JavaScript Essential: variables, strings, and arrays
 
-      console.log(number2);
-      console.log("Good Evening!");
-      console.log("The color is: " +color);
-      console.log(`The color is: ${color}`);
-
-      //let name = prompt("Enter a name: ", "WHERE AM I?")
-
-      let num1 = prompt("enter number 1: ")
-      num1 = parseInt(num1);
-      let num2 = parseInt(prompt("enter number 2: "));
-      let sumation = num1 + num2;
-
-      //STRINGS
-      let name = "Will Smith";
-      let nameLength = name.length
-      let upperName = name.toUpperCase()
-      let lowerName = name.toLowerCase()
-      let newName = name.slice(2,8)
-
-      //ARRAYS
-      let everything = [-23, 'color', true, "Peter Pan", 88]
-      let copyArray1 = everything
-
-
-      //ACTIVITY 5 STARTS HERE
       //activty 5.1a
       let yourname = prompt("Enter your name: ")
       let luckynum = prompt("Enter your lucky number: ")
       console.log(`Welcome to the program ${yourname}. Your lucky number is ${luckynum}.`)
+
+      
+
+      // 2. String and string methods
 
       //activty 5.1b
       console.log(`Good Morning ${yourname}. You entered number: ${luckynum}.`)
 
       //activity 5.2a
       let word = prompt("Enter your favorite word: ");
-      let secondletter = word[1]
-      console.log(`The second letter of the word is: + ${secondletter}`)
+      let secondLetter = word[1]
+      console.log(`The second letter of the word is: + ${secondLetter}`)
 
       //activity 5.2b
       let wordLength = word.length
@@ -62,9 +36,13 @@
       console.log(wordUPPER);
 
       //activity5.2d
-      let last2letters = word.slice(-2)
-      console.log(`The last two characters of the word + ${word} + is + ${last2letters}`)
+      let last2char = word.slice(-2)
+      console.log(`The last two characters of the word + ${word} + is + ${last2char}`)
 
+
+      
+      // 3. Arrays and array methods
+      
       //activty5.3a
       var earthly = ['wheels', true, 14, 'cake', -9, 'whales']
       console.log(`Mixed array with initial values: + ${earthly}`)
@@ -83,6 +61,8 @@
       let copyArray = earthly
       reversedArray = copyArray.reverse()
       console.log("Mixed array", earthly, "and reverse of copy array: ", reversedArray)
+
+
 
     </script>
   </body>

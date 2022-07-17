@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(152, 230, 200);
+    text-align: center;
+    color: black;
+  }
+  
+  h1 {
+    color: Black;
+    margin-left: 20px;
+  }
+
+  .table{font-size: medium; padding: 50%; }

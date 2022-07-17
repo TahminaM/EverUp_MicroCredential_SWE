@@ -1,0 +1,13 @@
+body {
+    background-image:url('../img/wallpaper.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:#fff;
+}
+
+#main-header{
+    background-color:#333;
+    color:#fff;
+    margin:0px;
+    overflow:hidden;
+}

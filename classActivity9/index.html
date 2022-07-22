@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+</head>
+<body>
+    <h1>Tahmina Munni: Project 1</h1>
+    <script type="text/javascript">
+
+    let msg = 'This is an outside message'
+      function displayMsg(){
+        let msg = "Hello World! I'm inside of a function"
+        console.log(msg)
+      }
+      console.log(msg)
+
+      //example 1.b
+      let msg1 = 'This is a global variable'
+      function displayMsg1(){
+        console.log(`function message ${msg1}`)
+      }
+      console.log(`After function ${msg1}`)
+
+      //example 2
+      const fullMoon = true;
+      let species = 'human' //global variable
+      if (fullMoon){
+        let species = 'werewolf'
+        console.log(`Lupin is currenty a ${species}`)
+      }
+      console.log(`Lupin is outside the if statement`)
+
+      //example 3) save a function in a variable
+      const sum = function(num1, num2){
+        return num1+num2
+      }
+
+      //example 3.b
+      console.log(`example 3.b returns the square of a number`)
+      let square = function(num){
+        return Math.pow(num,2)
+      }
+
+      //example 4 - define a function that will run twice the function rolldice
+      function callTwice(dice){
+        console.log(dice())
+        console.log(dice())
+      }
+      function rolldice(){
+        const roll = Math.floor(Math.random()*6)+1
+        return roll
+      }
+
+      //example 5
+      function makeBetweenFunc(min,max){
+        return function (num){
+          return num>= min && num<=max
+        }
+      }
+
+      //example 6 - create a method for object myMath
+      const myMath ={
+        square (num){return num*num},
+        double (num){return num*2}
+      }
+
+      //example 7 - define an object called square, which will hold methods area and perimeter
+      const squareFig = {
+        area (side){return side*side},
+        perimeter (side){return side*4}
+      }
+
+      //example 8 - use the "this" keywork in an object
+      const cat ={
+        name: 'Mickey',
+        color: 'white with black spots!',
+        breed: 'unknown';
+        meow(){console.log(`${this.name} MEOW MEOW MEOW`)}
+      }
+
+      //example 9 - define an obkect called "hen" with 2 properties and a method
+      const hen={
+        name: 'Helen',
+        eggCount: 0,
+        layAnEgg (){this.eggCount++; return `EGG! Egg count = ${this.eggCount}`}
+      }
+
+
+      //example 10
+      function yell(message){
+        try{
+          console.log(message.toUpperCase().repeat(3))
+        }
+        catch{
+          console.log(`Please pass a string next week`)
+        }
+      }
+
+      //example 11
+      console.log('Example 11) default parameters')
+      function rollDice(numSides=6){
+        return Math.floor(Math.random()*numSides) + 1
+      }
+
+      //example 12
+      console.log('Example 12) Spread!')
+      let nums =[-9, 20, -13, 8, 6]
+      let greatest = Math.max(6, -1, 7, -10, 5)
+      let lowest = Math.min(6, -1, 7, -10, 5)
+
+      let animal = ['cat', 'dog', 'fish']
+      let copyAnimal = [...animal]
+       
+    
+    </script>  
+  </body>
+</html>

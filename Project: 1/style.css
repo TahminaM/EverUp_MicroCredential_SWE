@@ -44,8 +44,43 @@ a{
     width: fit-content;
     font-size: 4rem;
     position: relative;
-    color: white;
+    color: transparent;
+    animation: text-reveal .5s ease forwards;
+    animation-delay: 1s;
 }
+#hero h1:nth-child(1){
+    animation-delay:1s ;
+}
+#hero h1:nth-child(2){
+    animation-delay:2s ;
+}
+#hero h1:nth-child(3){
+    animation-delay:3s ;
+}
+
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+
+#hero h1:nth-child(1) span{
+    animation-delay:.5s ;
+}
+#hero h1:nth-child(2)span{
+    animation-delay: 1.5s ;
+}
+#hero h1:nth-child(3)span{
+    animation-delay: 2.5s ;
+}
+
+
 
 #hero .cta{
     display: inline-block;
@@ -64,4 +99,22 @@ a{
 #hero .cta:hover{
     color: white;
     background-color: crimson;
+}
+
+/* key frames*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text-reveal{
+    100%{
+        color: white;
+    }
 }

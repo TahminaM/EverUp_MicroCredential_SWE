@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 10</title>
+    <style media="screen">
+    *{box-sizing: border-box;}
+      .title{
+      background-color: purple;
+      color:pink;
+      text-align: center;
+      }
+      .subtitle{
+        text-align: right;
+        font-family: "book antiqua";
+      }
+      .link, .a_main{
+      background-color: darkgray;
+      color: purple;
+      text-decoration: none;
+      padding: 10px 20px;
+      }
+
+      .link:hover{
+      background-color: purple;
+      color:darkgray;
+      box-shadow: 0px 0px 3px 1px purple;
+      }
+      .modalWindow{
+      background-color: rgba(150,150,150,0.6);
+      position: fixed;
+      top:0px;
+      bottom: 0px;
+      left: 0px;
+      right:0px;
+      opacity: 0;
+      pointer-events: none;
+      }
+      .modalWindow:target{
+      opacity: 1;
+      pointer-events: auto;
+      transition: ease-in 0.5s;
+      }
+      .content_main, .content1{
+      height: 450px;
+      background-color: white;
+      margin: 2em;
+      box-shadow: 2px 2px 10px lightgray;
+      border: solid lightgray;
+      padding: 1em;
+      }
+      .content_main{
+        float: left;
+        width: 250px;
+        text-align: center;
+        margin-left: 3em;
+      }
+      .content1{
+        width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5em;
+        position: relative;
+      }
+
+      .info_main{
+      margin-bottom: 3em;
+      }
+      .info_main img{
+      width: 100%;
+      padding: 1em;
+      }
+      .close{
+      background-color:lightgray;
+      padding: 10px;
+      position: absolute;
+      top:0px;
+      right: 0px;
+      text-decoration: none;
+      color: darkgray;
+      font-weight: 600;
+      }
+      .close:hover{
+      background-color: rgb(50,50,50);
+      color: white;
+      }
+      .info{
+      width:90%;
+      height: 80%;
+      position: absolute;
+      top:10%;
+      }
+      .info img{
+      width: 50%;
+      float: left;
+      height: 90%;
+      }
+      .p{
+      float:right;
+      width: 50%;
+      height: 90%;
+      }
+
+      .p i{
+      font-size: 0.6em;
+      }
+      .p span{
+      text-decoration: line-through;
+      }
+      .p b{
+      color: red;
+      font-size: 1.2em;
+      }
+      .p hr{
+      margin-top: 60px;
+      }
+      .add{
+      width: 90%;
+      background-color: rgb(50,50,50);
+      text-align: center;
+      padding: 0.5em;
+      color: lightgray;
+      text-decoration: none;
+      font-weight: bold;
+      position: absolute;
+      bottom: 10%;
+      }
+      .add:hover{
+      background-color: lightgray;
+      color:rgb(50,50,50);
+      }
+      .a_main{
+      margin-top:2em;
+      display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Feel our nutrient-rich lotions! </h1>
+    <!-- item 1-->
+    <section class="main_container">
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4138a78d/hires/026527339.jpg?sh=471&yocs=o_s_" alt="WHITE CITRUS Lotion">
+          <div class="p_main">WHITE CITRUS
+            <br><i>Ultra Shea Body Cream</i>
+          </div>
+        </section>
+        <a href="#openModal1" class="link" class="a_main">Click here</a>
+      </section>
+      <!-- item 2-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb6e3f9f3/hires/026498930.jpg?sh=471&yocs=o_s_" alt="EUCALYPTUS SPEARMINT Lotion">
+          <div class="p_main">EUCALYPTUS SPEARMINT
+            <br><i>Aromatherapy Body Lotion</i>
+          </div>
+        </section>
+        <a href="#openModal2" class="link" class="a_main">Click here</a>
+      </section>
+      <!-- item 3-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9d7570c1/hires/026480505.jpg?sh=471&yocs=o_s_" alt="UBBLY ROSÉ Lotion">
+          <div class="p_main">UBBLY ROSÉ
+            <br><i>Ultimate Hydration Body Cream</i>
+          </div>
+        </section>
+        <a href="#openModal3" class="link" class="a_main">Click here</a>
+      </section>
+
+      <!-- item 4-->
+      <section class="content_main">
+        <section class="info_main">
+          <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4ff44311/hires/026494225.jpg?sh=471&yocs=o_s_" alt="CUCUMBER MELONLotion">
+          <div class="p_main">CUCUMBER MELON
+            <br><i>Rich Moisturizer Body Cream</i>
+          </div>
+        </section>
+        <a href="#openModal4" class="link" class="a_main">Click here</a>
+      </section>
+
+    <!-- modal window 1-->
+  <form action="templates/checkout.html" method = "post">
+    <div class="modalWindow" id="openModal1">
+      <section class="content1">
+        <a class="close" href="#">&#10005;</a>
+        <section class="info">
+          <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4138a78d/hires/026527339.jpg?sh=471&yocs=o_s_" alt="WHITE CITRUS Lotion">
+          <div class="p">WHITE CITRUS <br><i>Ultra Shea Body Cream</i>
+            <hr>
+            A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+            <hr>
+            <span>$13.50</span> <b>Now $3.25</b>
+          </div>
+        </section>
+        <a class="add">CONTINUE SHOPPING</a>
+      </section>
+    </div>
+	</form>
+
+  <!-- modal window 2-->
+<form action="templates/checkout.html" method = "post">
+  <div class="modalWindow" id="openModal2">
+    <section class="content1">
+      <a class="close" href="#">&#10005;</a>
+      <section class="info">
+        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb6e3f9f3/hires/026498930.jpg?sh=471&yocs=o_s_" alt="PINK WATERMELON Lotion">
+        <div class="p">EUCALYPTUS SPEARMINT <br><i>Aromatherapy Body Lotion</i>
+          <hr>
+          A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+          <hr>
+          <span>$15.50</span> <b>Now $4.50</b>
+        </div>
+      </section>
+     <a class="add">CONTINUE SHOPPING</a>
+    </section>
+  </div>
+</form>
+
+<!-- modal window 3-->
+<form action="templates/checkout.html" method = "post">
+<div class="modalWindow" id="openModal3">
+  <section class="content1">
+    <a class="close" href="#">&#10005;</a>
+    <section class="info">
+      <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9d7570c1/hires/026480505.jpg?sh=471&yocs=o_s_" alt="PINK WATERMELON Lotion">
+      <div class="p">UBBLY ROSÉ<br><i>Ultimate Hydration Body Cream</i>
+        <hr>
+        A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+        <hr>
+        <span>$12.50</span> <b>Now $3.50</b>
+      </div>
+    </section>
+    <a class="add">CONTINUE SHOPPING</a>
+  </section>
+</div>
+</form>
+
+<!-- modal window 4-->
+<form action="templates/checkout.html" method = "post">
+<div class="modalWindow" id="openModal4">
+  <section class="content1">
+    <a class="close" href="#">&#10005;</a>
+    <section class="info">
+      <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4ff44311/hires/026494225.jpg?sh=471&yocs=o_s_" alt="PINK WATERMELON Lotion">
+      <div class="p">CUCUMBER MELON<br><i>Ultimate Hydration Body Cream</i>
+        <hr>
+        A sweet summer blend of juicy watermelon, pink petals and dewy aloe in our nutrient-rich, non-greasy lotion.
+        <hr>
+        <span>$13.50</span> <b>Now $4.25</b>
+      </div>
+    </section>
+    <a class="add">CONTINUE SHOPPING</a>
+  </section>
+</div>
+</form>
+
+
+    <script type="text/javascript">
+    /* YOUR JS CODE FOR ACTIVITY 10 GOES HERE
+    /* a) Find all <div> with class="p" and change the font family to "monotype corsive" and font color to orange
+       ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
+       let allP = document.getElementsByClassName('p')
+       for (let paragraph of allP){
+         paragraph.style.fontFamily = 'Monotype Corsiva'
+         paragraph.style.color = 'orange'
+       }
+
+    /* b) Find all <a> with class="add" and add a href attribute with value of #
+      ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
+      let allA = document.getElementsByClassName('add')
+      for (let eachadd of allA){
+        eachadd.href = '#'
+      }
+
+    /* c) Append a <h2> element right after <h1 class="title">. The text content of the <h2> should be your full name.  Also add a class name “subtitle” to <h2>
+      ------------ TYPE YOUR CODE BELOW THIS LINE  ------------*/
+      let newLocation = document.querySelector('title')
+      const newH2 = document.createElement('h2')
+      newH2.textContents = 'Joyce Zhang'
+      newLocation.appendChild(newH2)
+
+      let newHeading2 = document.querySelector('h2')
+      newHeading2.className = 'subtitle'
+
+
+
+    </script>
+  </body>
+</html>

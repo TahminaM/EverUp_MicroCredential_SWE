@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Sent!</title>
+  </head>
+  <body>
+    <h1>Your form has been submitted!</h1>
+    <p>First Name:<span id="storedFN"></span></p>
+    <p>Last name:<span id="storedLN"></span></p>
+    <a href="activity12.html">BACK</a>
+
+    <script type="text/javascript">
+      const storedFN = document.querySelector('#storedFN')
+      const storedLN = document.querySelector('#storedLN')
+      storedFN.innerHTML = localStorage.getItem('FN')
+      storedLN.innerHTML = sessionStorage.getItem('LN')
+    </script>
+  </body>
+</html>

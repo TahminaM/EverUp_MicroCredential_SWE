@@ -12,10 +12,7 @@
     <script type="text/javascript" src="activity12.js"></script>
     <h1>Tahmina Munni: Class Activity 12: Responsive website</h1>
     <section class="container">
-        <header class="title">
-            Title
-
-        </header>
+        <header class="title">Four Seasons</header>
         <main class="intro">
             INTRUDUCTION
         </main>
@@ -37,6 +34,7 @@
             <img src="img/img1.jpg" alt="image of spring">
             <h3>Spring</h3>
             <p>Gypsophila is a genus of flowering plants in the carnation family</p>
+            <a id="openItem1">ADD TO CART</a>
         </div>
         <!--Card 2-->
 
@@ -62,36 +60,55 @@
 
     </section>
     <!-- Forms -->
-    <hr>
-      <input type="text" name="username" value="" maxLength="20" placeholder="Up to 20 characters" class="input2">
+    <form>
+      <hr>
+      <!--   USERNAME & PASSWORD   -->
+      <input type="text" maxlength="20" placeholder="Up to 20 characters" value="" name="username" class="input2">
+
       <input type="password" name="password" value="" placeholder="Up to 8 characters" maxlength="8" id="myPassword">
       <a id="viewPassword">View Password</a>
-      <!-- Example 4: Create a checkbox list for different animals -->
-      <p>Select your favorite animal (checkbox)</p>
+
+
+
+
+      <!--Example 4 : CHECKBOX   -->
+      <h3>Select your favorite animal</h3>
+      <!--   LABEL LINKED BY ID   -->
       <label for="cat">Cats</label>
       <input type="checkbox" name="animals" value="cat" id="cat">
       <br>
-      <label>Dog<input type="checkbox" name="animals" value="dog"></label>
-      <!-- Example 5 -->
+      <!--   WRAP LINK INSTEAD OF 'LABEL FOR = '   -->
+      <label>Dog <input type="checkbox" name="animals" value="dog"></label>
+
+
+
+
+      <!--Example 5 : RADIO   -->
+      <!--   NAME IS USED TO GROUP INPUTS?   -->
       <h3>Select a gender</h3>
       <label>Female <input type="radio" name="gender" value="female"></label>
       <label>Male <input type="radio" name="gender" value="male"></label>
       <label>Others <input type="radio" name="gender" value="others"></label>
+    </form>
+
     <hr>
 
-    <!-- Example 6 -->
+    <!--   Example 6 : search bar to external website & date -->
     <form action="https://www.google.com/search">
-        <input type="search" name="q" placeholder="Search">
-        <button>Search on Google</button>
-      </form>
-  
-      <form action="https://www.youtube.com/results">
-        <input type="search" name="search_query" placeholder="Search">
-        <button>Search on Youtube</button>
-      </form>
-      <label for="date">Select appointment date:</label>
-      <input type="date" name="appointment" value="" id="date">
-      <hr>
+        <input type="search" name="q" placeholder="Type your search">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="search" name="search_query" placeholder="Type your search">
+        <button>Search YouTube</button>
+    </form>
+
+
+    <!--date-->
+    <label for="date">Select appointment date:</label>
+    <input type="date" name="appointment" value="" id="date">
+
+
 
       <!-- SLIDESHOW -->
     <h1>MANUAL SLIDESHOW</h1>
@@ -112,8 +129,8 @@
         <img src="img/img4.jpg" alt="Image of Winter">
         <p>Winter</p>
       </div>
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
     </section>
 
     <h1>AUTOMATIC SLIDESHOW</h1>
@@ -148,6 +165,8 @@
       <footer class="footer">CONTACT US</footer>
     </section>
 
+
+
     <!-- Modal Window for Item1 -->
     <form id="myForm" action="sentForm.html" method="post">
       <section class="modalWindow">
@@ -164,7 +183,7 @@
       </section>
     </form>
 
-    <script type="text/javascript" src="activity12.js"></script>
+    
 
 
   </script>  

@@ -79,10 +79,94 @@
       <label>Others <input type="radio" name="gender" value="others"></label>
     <hr>
 
+    <!-- Example 6 -->
+    <form action="https://www.google.com/search">
+        <input type="search" name="q" placeholder="Search">
+        <button>Search on Google</button>
+      </form>
+  
+      <form action="https://www.youtube.com/results">
+        <input type="search" name="search_query" placeholder="Search">
+        <button>Search on Youtube</button>
+      </form>
+      <label for="date">Select appointment date:</label>
+      <input type="date" name="appointment" value="" id="date">
+      <hr>
+
+      <!-- SLIDESHOW -->
+    <h1>MANUAL SLIDESHOW</h1>
+    <section class="container_slideshow">
+      <div class="slide">
+        <img src="img/img1.jpg" alt="Image of Spring">
+        <p>Spring</p>
+      </div>
+      <div class="slide">
+        <img src="img/img2.jpg" alt="Image of Summer">
+        <p>Summer</p>
+      </div>
+      <div class="slide">
+        <img src="img/img3.jpg" alt="Image of Fall">
+        <p>Fall</p>
+      </div>
+      <div class="slide">
+        <img src="img/img4.jpg" alt="Image of Winter">
+        <p>Winter</p>
+      </div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </section>
+
+    <h1>AUTOMATIC SLIDESHOW</h1>
+    <section class="container_slideshow">
+      <div class="slideAuto">
+        <img src="img/img1.jpg" alt="Image of Spring">
+        <p>Spring</p>
+      </div>
+      <div class="slideAuto">
+        <img src="img/img2.jpg" alt="Image of Summer">
+        <p>Summer</p>
+      </div>
+      <div class="slideAuto">
+        <img src="img/img3.jpg" alt="Image of Fall">
+        <p>Fall</p>
+      </div>
+      <div class="slideAuto">
+        <img src="img/img4.jpg" alt="Image of Winter">
+        <p>Winter</p>
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <h1>Tahmina Munni</h1>
+    <section class="container">
+      <header class="title">
+        TITLE
+      </header>
+      <main class="intro">
+        INTRODUCTION
+      </main>
+      <footer class="footer">CONTACT US</footer>
+    </section>
+
+    <!-- Modal Window for Item1 -->
+    <form id="myForm" action="sentForm.html" method="post">
+      <section class="modalWindow">
+        <div class="modalBody">
+          <header class="modalHeader"><a href='#' id="closeModal">&#10005;</a>
+          </header>
+          <main class="modalInfo">INFORMATION OF THE PRODUCT <br><br>
+            <label for="firstN">First Name: <input type="text" name="firstName" id="firstN"></label>
+            <br><br>
+            <label for="lastN">Last Name: <input type="text" name="lastName" id="lastN"> </label>
+          </main>
+          <footer class="modalFooter"><input type="submit" value="SUBMIT" class="input1"></footer>
+        </div>
+      </section>
+    </form>
+
+    <script type="text/javascript" src="activity12.js"></script>
 
 
-
-
-</script>  
-</body>
+  </script>  
+ </body>
 </html>

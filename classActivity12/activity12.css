@@ -1,6 +1,64 @@
 *{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 
+/* FORMS */
+.input1, .input2{display: block; margin: 2em;}
+.input1{background-color: darkgray; border-radius: 5px;}
+.input1:hover{
+  background-color: lightgray; color: red; box-shadow: 0px 0px 2px 2px gray;}
+/* SLIDESHOW */
+.container_slideshow{
+  width: 60%;
+  margin: 2em auto;
+  position: relative;
+  overflow: hidden;
+}
+.slide, .slideAuto{
+  width: 100%;
+  display: none;
+  animation: slideAnimation 1s;
+}
+
+
+@keyframes slideAnimation{
+    0%{transform: translateX(50px);}
+    100%{transform: translate(0px)}
+  }
+  .slide img, .slideAuto img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  .slide p, .slideAuto p{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 20%;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+  }
+  .prev, .next{
+    position: absolute;
+    top: 60%;
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+  .prev{
+    left: 2%;
+  }
+  .next{
+    right: 2%;
+  }
+  .prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+
+
 /* Card*/
 .container{
     border: solid gray;
@@ -30,12 +88,28 @@ html{scroll-behavior: smooth;}
     float: left;
 }
 
-/* Class activity*/
+/* Class activity nd model window*/
+#openItem1{display: block; padding: 0.5em; color: lightgray; background-color: orange; text-align: center;}
+#openItem1:hover{background-color: darkgray;}
+.modalWindow{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
+.modalBody{width: 80%; height: 500px; margin: 5% auto; background-color: white;}
+.modalHeader{height: 10%; background-color: orange;}
+.modalInfo{height: 70%; padding: 0.5em;}
+.modalFooter{height: 20%; background-color: orange; padding: 0.5em;}
+
+
+
 .mainTitle{
     text-align: center; content: orange;padding: 2em;
 }
-.cardContainer{display: inline-block;}
+.cardContainer{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-top: 2%;
+}
 .nav{
+    background-color: orange;
     width: 100%;
     height: auto;
 }
@@ -54,15 +128,13 @@ html{scroll-behavior: smooth;}
 }
 
 
-
-
-
 .card{
     border: solid gray;
     box-shadow: 1px 1px 3px gray;
     width: 23.6%;
     margin-left: 1%;
     height: 100%;
+    margin-top: 2em;
     float: left;
 }
 
@@ -86,6 +158,11 @@ html{scroll-behavior: smooth;}
 }
 
 */
+
+
+
+
+
 
 
 @media only screen and(max-width: 800px){

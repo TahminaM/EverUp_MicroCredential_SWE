@@ -21,7 +21,7 @@
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(184, 60, 85);
+    background: crimson;
 }
 .navbar .max-width{
     display: flex;
@@ -101,6 +101,72 @@
     color: crimson;
     font-weight: 500;
 }
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 17px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* about section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu' , sans-serif;
+}
+.about .title:before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+
+//37min
+
+
+
+
+
+
+
+
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
 
 
 /* responsive media query start */
@@ -154,6 +220,10 @@
     .home .home-content .text-3{
         font-size: 35px;
     }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
     
 }
 @media (max-width : 690px){
@@ -167,6 +237,10 @@
     }
     .home .home-content .text-3{
         font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+        
     }
 }
 

@@ -125,7 +125,7 @@ html{scroll-behavior: smooth;}
   width: 23.7%;
   margin-left: 1%;
   height: 100%;
-  float: left;
+  
   display: inline-block;
 }
 .card img{

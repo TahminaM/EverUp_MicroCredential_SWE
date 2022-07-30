@@ -4,6 +4,7 @@ btn2.onclick = function(){
     alert('Hi there!')
 }
 
+
 /* another way to create the event
 function clickBtn(){
     alert('Hi there!')

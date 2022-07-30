@@ -5,7 +5,7 @@
 body{
     background-color: lightblue;
 }
-
+/*   EXAMPLE 7   */
 .colorContainer{
     width: 50%;
     height: 200px;
@@ -21,7 +21,7 @@ body{
     margin: 5em 30%;
     width: 40%;
 }
-
+/*   EXAMPLE 9   */
 .divContainer{
     display: inline-block;
     width: 100%;
@@ -35,7 +35,7 @@ body{
     border: inset 10px;
     float: left;
 }
-
+/*   EXAMPLE 11   */
 .display9{
     position: fixed;
     right: 10%;
@@ -48,6 +48,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
+/*   EXAMPLE 12   */
 .toTop{
     position: fixed;
     bottom: 10%;
@@ -67,4 +68,5 @@ html{
 
 .toTop:hover{
     box-shadow: 0px 0px 5px 5px rgb(128, 128, 128, .5);
+    opacity: 0.8;
 }

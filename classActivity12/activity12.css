@@ -1,207 +1,167 @@
 *{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 
+
 /* FORMS */
-input{display: block; margin-bottom: 2em;}
-
-.input1{
-    background-color: darkgray; border-radius: 12px; padding: 0.2em 1em;
-}
-.input1:hover{background-color: lightgray; color: red; box-shadow: 0px 0px 2px 2px gray;}
+.input1, .input2{display: block; margin: 2em;}
+.input1{background-color: darkgray; border-radius: 5px;}
+.input1:hover{
+  background-color: lightgray; color: red; box-shadow: 0px 0px 2px 2px gray;}
 
 
-.input2, #myPassword{display: block; margin: 2em;}
-
-/*   PASSWORD   */
-#viewPassword, #myPassword {
-    display: inline-block;
-}
-
-
-/* SLIDESHOW */
+  /* SLIDESHOW */
 .container_slideshow{
-  border: solid red;
-  width: 80%;
+  width: 60%;
   margin: 2em auto;
   position: relative;
+  overflow: hidden;
 }
 .slide, .slideAuto{
-  border: solid green;
   width: 100%;
   display: none;
   animation: slideAnimation 1s;
 }
-
 @keyframes slideAnimation{
-    0%{transform: translateX(50px);}
-    100%{transform: translate(0px)}
-  }
-  .slide img, .slideAuto img{
-    width: 100%;
-    vertical-align: middle;
-  }
-  .slide p, .slideAuto p{
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    text-align: center;
-    font-size: 5em;
-    color: white;
-  }
-  /*   Buttons   */
-  .prev, .next{
-    position: absolute;
-    top: 50%;
-    font-size: 3em;
-    color: white;
-    display: inline-block;
-    padding: 0.5em 1em;
-  }
-  .prev{
-    left: 2%;
-  }
-  .next{
-    right: 2%;
-  }
-  .prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
-  }
+  0%{transform: translateX(50px);}
+  100%{transform: translate(0px)}
+}
+.slide img, .slideAuto img{
+  width: 100%;
+  vertical-align: middle;
+}
+.slide p, .slideAuto p{
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+.prev, .next{
+  position: absolute;
+  top: 60%;
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+.prev{
+  left: 2%;
+}
+.next{
+  right: 2%;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
 
 
-
-
-
-/* Card*/
+/* PRACTICE */
 .container{
-    border: solid gray;
-    width:  100% ;
-    height:  100px;
-    box-shadow: 1px 1px 5px gray;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 3em ;
+  border: solid gray;
+  width: 100%;
+  height: 200px;
+  box-shadow: 1px 1px 5px gray;
+  display: inline-block;
+  margin-bottom: 3em;
 }
 .title{
-    border: solid red;
-    width: 100%;
-    height: 20%;
+  width: 100%;
+  height: 20%;
 }
 .intro{
-    border: solid green;
-    width: 65%;
-    height: 80%;
-    margin-right: 2%;
-    float: left;
+  width: 65%;
+  height: 80%;
+  margin-right: 2%;
+  float: left;
 }
 .footer{
-    border: solid blue;
-    width: 33%;
-    height: 80%;
-    float: left;
+  width: 33%;
+  height: 80%;
+  float: left;
 }
 
-/* Class activity nd model window*/
-#openItem1{display: block; padding: 0.5em; color: black; background-color: orange; text-align: center; text-decoration: none;
-}
+
+/* CARDS ACTIVITY AND MODAL WINDOW*/
+#openItem1{display: block; padding: 0.5em; color: lightgray; background-color: orange; text-align: center;}
 #openItem1:hover{background-color: darkgray;}
-.modalWindow{background-color: rgba(50, 50, 50, 0.6); position: fixed; display: none;
-top: 0%; bottom: 0%; right: 0%; left: 0%;}
+.modalWindow{background-color: rgba(50,50,50,0.8); position: fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
 .modalBody{width: 80%; height: 500px; margin: 5% auto; background-color: white;}
-.modalHeader{height: 10%; background-color: orange; padding: 0.5em;}
+.modalHeader{height: 10%; background-color: orange;}
 .modalInfo{height: 70%; padding: 0.5em;}
 .modalFooter{height: 20%; background-color: orange; padding: 0.5em;}
 
-/*   MAIN TITLE & 3 LINKS   */
+
+
 .mainTitle{
-    text-align: center; content: orange;padding: 2em;
+  text-align: center;
+  color: orange;
+  padding: 1em;
 }
 .cardContainer{
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 2em;
-    margin-top: 2%;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 2em;
+  margin-top: 2%;
 }
 .nav{
-    background-color: orange;
-    width: 100%;
-    height: auto;
+  background-color: orange;
+  width: 100%;
+  height: auto;
 }
 .nav a{
-    background-color: orange;
-    width: 32.9%;
-    padding: 1em;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: darkblue;
-
+  background-color: orange;
+  width: 32.9%;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: darkblue
 }
-.nav a:hover{
-    background-color: blue;
-}
-
-/*   CARDS   */
+.nav a:hover{background-color: blue; color: orange;}
 .card{
-    border: solid gray;
-    box-shadow: 1px 1px 3px gray;
-    width: 23.6%;
-    margin-left: 1%;
-    height: 100%;
-    margin-top: 2em;
-    float: left;
+  box-shadow: 2px 2px 3px gray;
+  width: 23.7%;
+  margin-left: 1%;
+  height: 100%;
+  float: left;
+  display: inline-block;
 }
-
 .card img{
-    width: 100%;
-    height: 45%;
+  width: 100%;
+  height: 45%;
 }
 .card h3{
-    text-align: center;
-    padding: 0.5em;
-    color: orange;
-
+  text-align: center;
+  padding: 0.5em;
+  color: orange;
 }
 .card p{
-    padding: 0.5em;
-}
-/* fixing height 
-
-.img4{
-    height:60% ;
+  padding: 0.5em;
 }
 
-*/
-
-
-
-
-@media only screen and(max-width: 800px){
-    body{background-color: pink;}
-    .container{height: 500px}
-    .title{height: 10%;font-size: 3em;overflow: hidden;}
-    .intro{height: 50%; width: 100%;}
-    .footer{width: 100%;height: 42%;}
-
-     /*nav*/ 
-    
-    .nav a{
-        width: 32%;
-    }  
-
-     /*cards*/ 
-    .card{
-        width: 47.5%;
-        margin-top: 2em;
-        margin-left: 2%;
-    }
-   }
-
-
-   @media only screen and(max-width: 600px){
-    .nav a, .card{
-        width: 80%;
-        margin:left 10%;
-    }
-    
-   }
+@media only screen and (max-width: 800px){
+  .container{height: 500px;}
+  .title{height: 10%; font-size: 3em; overflow: hidden; color: purple;}
+  .intro{height: 50%; width: 100%;}
+  .footer{width: 100%; height: 40%;}
+  /* NAV */
+  .nav a{
+    width: 32%;
+  }
+  /* CARDS */
+  .card{
+    margin-top: 2em;
+    width: 47.5%;
+    margin-left: 2%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 600px){
+  /* NAV and CARD*/
+  .nav a, .card{
+    width: 80%;
+    margin-left: 10%;
+  }
+}

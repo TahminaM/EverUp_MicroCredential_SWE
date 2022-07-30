@@ -1,154 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Tahmina: Activity 12 - Responsive Webpage</title>
     <link rel="stylesheet" href="activity12.css">
-    <title>Activity 12</title>
-</head>
-<body>
-    <script type="text/javascript" src="activity12.js"></script>
-    <h1>Tahmina Munni: Class Activity 12: Responsive website</h1>
-    <section class="container">
-        <header class="title">Four Seasons</header>
-        <main class="intro">
-            INTRUDUCTION
-        </main>
-        <footer class="footer">Contact us</footer>
+  </head>
+  <body>
 
-    </section>
-
-    <h1 class="mainTitle"> Four Seasons</h1>
+    <!-- RESPONSIVE -->
+    <h1 class="mainTitle">Four Seasons</h1>
     <nav class="nav">
-        <a href="https://www1.nyc.gov/" target="_blank">NYC</a>
-        <a href="https://www.cuny.edu/" target="_blank">CUNY</a>
-        <a href="https://www.qcc.cuny.edu/" target="_blank">QCC</a>
-
+      <a href="https://www1.nyc.gov/" target="_blank">NYC</a>
+      <a href="https://www.cuny.edu/" target="_blank">CUNY</a>
+      <a href="https://www.qcc.cuny.edu/" target="_blank">QCC</a>
     </nav>
     <section class="cardContainer">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="img/winter.jpg" alt="Image of Winter">
+        <h3>Winter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <!-- open modal window -->
+        <a id="openItem1">ADD TO CART</a>
+      </div>
 
-        <!--Card 1-->
-        <div class="card">
-            <img src="img/img1.jpg" alt="image of spring">
-            <h3>Spring</h3>
-            <p>Gypsophila is a genus of flowering plants in the carnation family</p>
-            <a id="openItem1">ADD TO CART</a>
-        </div>
-        <!--Card 2-->
-
-        <div class="card">
-            <img src="img/img2.jpg" alt="image of Summer">
-            <h3>Summer</h3>
-            <p>Gypsophila is a genus of flowering plants in the carnation family</p>
-        </div>
-
-        <!--Card 3-->
-        <div class="card">
-            <img src="img/img3.jpg" alt="image of Fall">
-            <h3>Fall</h3>
-            <p>Gypsophila is a genus of flowering plants in the carnation family</p>
-        </div>
-
-        <!--Card 4-->
-        <div class="card">
-            <img src="img/img4.jpg" alt="image of Winter">
-            <h3>Winter</h3>
-            <p>Gypsophila is a genus of flowering plants in the carnation family</p>
-        </div>
-
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="img/fall.jpg" alt="Image of Fall">
+        <h3>Fall</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="img/spring.jpg" alt="Image of Spring">
+        <h3>Spring</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="img/summer.jpg" alt="Image of Summer">
+        <h3>Summer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
     </section>
-    <!-- Forms -->
-    <form>
-      <hr>
-      <!--   USERNAME & PASSWORD   -->
-      <input type="text" maxlength="20" placeholder="Up to 20 characters" value="" name="username" class="input2">
 
+    <!-- FORMS -->
+
+      <hr>
+      <input type="text" name="username" value="" maxLength="20" placeholder="Up to 20 characters" class="input2">
       <input type="password" name="password" value="" placeholder="Up to 8 characters" maxlength="8" id="myPassword">
       <a id="viewPassword">View Password</a>
-
-
-
-
-      <!--Example 4 : CHECKBOX   -->
-      <h3>Select your favorite animal</h3>
-      <!--   LABEL LINKED BY ID   -->
+      <!-- Example 4: Create a checkbox list for different animals -->
+      <p>Select your favorite animal (checkbox)</p>
       <label for="cat">Cats</label>
       <input type="checkbox" name="animals" value="cat" id="cat">
       <br>
-      <!--   WRAP LINK INSTEAD OF 'LABEL FOR = '   -->
-      <label>Dog <input type="checkbox" name="animals" value="dog"></label>
-
-
-
-
-      <!--Example 5 : RADIO   -->
-      <!--   NAME IS USED TO GROUP INPUTS?   -->
+      <label>Dog<input type="checkbox" name="animals" value="dog"></label>
+      <!-- Example 5 -->
       <h3>Select a gender</h3>
       <label>Female <input type="radio" name="gender" value="female"></label>
       <label>Male <input type="radio" name="gender" value="male"></label>
       <label>Others <input type="radio" name="gender" value="others"></label>
-    </form>
-
     <hr>
-
-    <!--   Example 6 : search bar to external website & date -->
+    <!-- Example 6 -->
     <form action="https://www.google.com/search">
-        <input type="search" name="q" placeholder="Type your search">
-        <button>Search Google</button>
+      <input type="search" name="q" placeholder="Search">
+      <button>Search on Google</button>
     </form>
+
     <form action="https://www.youtube.com/results">
-        <input type="search" name="search_query" placeholder="Type your search">
-        <button>Search YouTube</button>
+      <input type="search" name="search_query" placeholder="Search">
+      <button>Search on Youtube</button>
     </form>
-
-
-    <!--date-->
     <label for="date">Select appointment date:</label>
     <input type="date" name="appointment" value="" id="date">
-
-
-
-      <!-- SLIDESHOW -->
+    <hr>
+    <!-- SLIDESHOW -->
     <h1>MANUAL SLIDESHOW</h1>
     <section class="container_slideshow">
       <div class="slide">
-        <img src="img/img1.jpg" alt="Image of Spring">
+        <img src="img/spring.jpg" alt="Image of Spring">
         <p>Spring</p>
       </div>
       <div class="slide">
-        <img src="img/img2.jpg" alt="Image of Summer">
+        <img src="img/summer.jpg" alt="Image of Summer">
         <p>Summer</p>
       </div>
       <div class="slide">
-        <img src="img/img3.jpg" alt="Image of Fall">
+        <img src="img/fall.jpg" alt="Image of Fall">
         <p>Fall</p>
       </div>
       <div class="slide">
-        <img src="img/img4.jpg" alt="Image of Winter">
+        <img src="img/winter.jpg" alt="Image of Winter">
         <p>Winter</p>
       </div>
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     </section>
 
     <h1>AUTOMATIC SLIDESHOW</h1>
     <section class="container_slideshow">
       <div class="slideAuto">
-        <img src="img/img1.jpg" alt="Image of Spring">
+        <img src="img/spring.jpg" alt="Image of Spring">
         <p>Spring</p>
       </div>
       <div class="slideAuto">
-        <img src="img/img2.jpg" alt="Image of Summer">
+        <img src="img/summer.jpg" alt="Image of Summer">
         <p>Summer</p>
       </div>
       <div class="slideAuto">
-        <img src="img/img3.jpg" alt="Image of Fall">
+        <img src="img/fall.jpg" alt="Image of Fall">
         <p>Fall</p>
       </div>
       <div class="slideAuto">
-        <img src="img/img4.jpg" alt="Image of Winter">
+        <img src="img/winter.jpg" alt="Image of Winter">
         <p>Winter</p>
       </div>
     </section>
@@ -165,8 +131,6 @@
       <footer class="footer">CONTACT US</footer>
     </section>
 
-
-
     <!-- Modal Window for Item1 -->
     <form id="myForm" action="sentForm.html" method="post">
       <section class="modalWindow">
@@ -174,7 +138,7 @@
           <header class="modalHeader"><a href='#' id="closeModal">&#10005;</a>
           </header>
           <main class="modalInfo">INFORMATION OF THE PRODUCT <br><br>
-            <label for="firstN">First Name: <input type="text" name="firstName" id="firstN"></label>
+            <label for="firstN">First Name: <input type="text" name="firstName" id="firstN"</label>
             <br><br>
             <label for="lastN">Last Name: <input type="text" name="lastName" id="lastN"> </label>
           </main>
@@ -183,9 +147,6 @@
       </section>
     </form>
 
-    
-
-
-  </script>  
- </body>
+    <script type="text/javascript" src="activity12.js"></script>
+  </body>
 </html>

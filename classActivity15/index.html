@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tahmina Munni: Activity 15</title>
+
+
+    <style media="screen">
+      #cat_facts{background-color: red; 
+        color: white; 
+        border-radius: 5px; 
+        padding: 10px;
+    }
+      #clear_reset{background-color: green; 
+        color: white; 
+        border-radius: 5px; 
+        padding: 10px; 
+        margin-left: 200px;
+    }
+      .catInfo_container{width: 500px; 
+        background-color: lightgray; 
+        height: 350px; 
+        margin-top: 20px; 
+        text-align: center;
+    }
+      .title{padding-top: 50px; 
+        font-size: 40px;
+    }
+      .info{width: 90%; 
+        height: 100px; 
+        margin-left: auto;  
+        margin-right: auto;
+    }
+      .num{
+        margin-top: 20px; 
+        font-size: 20px;
+    }
+      .facts_api{
+        margin-top: 20px; 
+        font-size: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Tahmina Munni: Activity 15: AJAX</h1>
+    <button id="cat_facts" class="cat_facts">Click to Get Cat Facts!</button>
+    <button id="clear_reset" class="clear_reset">Clear and Reset</button>
+
+    <div class="catInfo_container">
+      <div class="title"><b>Cat Facts 🐈</b></div>
+      <div class="info">
+        <div class="num"><b></b></div>
+        <div class="facts_api"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+
+        
+      // ACTIVITY 15:
+      let counter = 0;
+
+      $('#cat_facts').click(function(){
+        counter++;
+        $('.num').html(`<b>${counter}.</b>`)
+        fetch("https://catfact.ninja/fact")
+        .then((res)=>{
+          console.log("LOADED!: Obtained Cat Fact", res)
+          res.json().then((data)=>
+          $('.facts_api').html(data['fact']))
+        })
+      })
+
+      $('#clear_reset').click(function(){
+        counter = 0
+        $('.num').html('')
+        $('.facts_api').html('')
+      })
+
+    
+
+      // Making a specific request using API headers
+      const getYear = async()=>{
+        const config = {headers: {Accept:'application/json'}}
+        const res = await axios.get("https://swapi.dev/api/people/1/")
+        
+        console.log("Using headers in axios. NAME: ", res.data.name, "BIRTH YEAR:", res.data.birth_year)
+      }
+
+
+      // Choosing specific response
+      const personID = async(id) =>{
+        try {
+          const res = await axios.get(`https://swapi.dev/api/people/${id}/`)
+          console.log(res.data)
+        } catch (e) {
+          console.log("ERROR!", e)
+        }
+      }
+
+
+      // Making request using axios
+      let axio = axios.get("https://swapi.dev/api/people/1/")
+      //console.log("Request using axios", axio)
+      .then(res =>{
+        console.log("RESPONSE using axios", res)
+      })
+
+
+      // Try and catch statement in fetch
+      // Making multiple requests using fetch
+      const loadPeople = async()=>{
+        try {
+          const res = await fetch("https://swapi.dev/api/people/1/")
+          const data = await res.json()
+          console.log(`Multiple responses using fetch, 1st person`, data)
+          const res2 = await fetch("https://swapi.dev/api/people/20/")
+          const data2 = await res2.json()
+          console.log(`Multiple responses using fetch, 2nd person`, data2)
+        } catch (e) {
+          console.log("ERROR!", e)
+        }
+      }
+
+
+      // Making an AJAX request using fetch
+      fetch("https://swapi.dev/api/people/1/")
+      .then((res)=>{
+        console.log("LOADED!: Using fetch", res)
+        res.json().then((data)=>
+        console.log("JSON result using fetch", data))
+      })
+
+      
+      // Making an AJAX request using XHR
+      const req = new XMLHttpRequest();
+      req.onload = function(){
+        console.log("LOADED!: Using XHR")
+        //console.log(this.response)
+        const person = JSON.parse(this.response)
+        console.log(`NAME: ${person.name}, HEIGHT: ${person.height}`)
+      }
+      req.onerror = function(){
+        console.log("ERROR!")
+        console.log(this)
+      }
+
+      req.open("GET", "https://swapi.dev/api/people/1/")
+      req.send()
+    </script>
+  </body>
+</html>

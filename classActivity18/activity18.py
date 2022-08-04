@@ -110,3 +110,12 @@ else:
 
 
 
+#ex 13: while loop to increment each num by 2 until it reaches up to 20
+print("User enters two numbers between 0 and 10. Use while loop to increment each number by 2 until both of them reach up to 20")
+num1 = int(input("Enter a number between 0 and 10: "))  
+num2 = int(input("Enter a number between 0 and 10: "))
+
+while num1 <= 20 and num2 <= 20:
+    print("number 1 = %s and number 2 = %s" %(num1, num2))
+    num1 += 2
+    num2 += 2

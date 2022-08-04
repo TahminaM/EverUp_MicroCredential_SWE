@@ -36,3 +36,35 @@ hyp = (h**2+w**2)**0.5
 print("A hypotenuse is: ", hyp)
 
 
+#strings
+msg = input("Enter a message: ")
+fullName = input("Enter a full name: ")
+print("%s. Welcome %s" %(msg, fullName))
+nameLen = len(fullName)
+lastCharName = fullName[nameLen - 1]
+index_a = fullName.find("a")
+print("Name %s has %s characters and the last character is: %s " %(fullName.upper(), nameLen, lastCharName))
+print("Name %s has letter a with index %s " %(fullName, index_a))
+
+
+#lists
+fruits = ["apples", "oranges", "grapes", "pears", "cherries", "mangos"]
+print(fruits)
+copyFruits = fruits.copy()
+copyFruits.reverse()
+copyFruits.append("berrries")
+print("Original list %s \n Copy list %s" %(fruits, copyFruits))
+numGrapes = copyFruits.count("grapes")
+numKiwi = copyFruits.count("kiwis")
+indexPears = fruits.index("pears")
+print("There are ", numGrapes, "grapes in the list")
+print("There are ", numKiwi, "kiwis in the list")
+print("Pears has index", indexPears)
+
+
+"""
+Multiple Line
+........
+........
+Comments
+"""

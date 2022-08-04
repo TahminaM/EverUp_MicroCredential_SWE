@@ -112,6 +112,7 @@ else:
 
 #ex 13: while loop to increment each num by 2 until it reaches up to 20
 print("User enters two numbers between 0 and 10. Use while loop to increment each number by 2 until both of them reach up to 20")
+
 num1 = int(input("Enter a number between 0 and 10: "))  
 num2 = int(input("Enter a number between 0 and 10: "))
 
@@ -119,3 +120,35 @@ while num1 <= 20 and num2 <= 20:
     print("number 1 = %s and number 2 = %s" %(num1, num2))
     num1 += 2
     num2 += 2
+
+
+
+#ex 14: create a while loop that checks if an entered number is between 0 and 10
+print("Checkpoint: Create a while loop that checks if an entered number is between 0 and 10")
+
+number = int(input("Enter a number between 0 and 10: "))
+while number < 0 or number > 10:
+    number = int(input("Try again! Enter a number between 0 and 10: "))
+print("Entered number = ", number)
+
+
+
+#ex 15: ask user to enter 2 nums between 0 and 10 w/ checkpoint. Use a while loop to incremenet each num by 2 until the sum of them reach up to 30
+print("Ask user to enter two numbers between 0 and 10 with checkpoints. Use a while loop to increment each number by 2 until the sum of them reach up to 30")
+
+number1 = int(input("Enter a number between 0 and 10: "))
+while number1 < 0 or number1 > 10:
+    number = int(input("Try again! Enter a number between 0 and 10: "))
+
+
+number2 = int(input("Enter a number between 0 and 10: "))
+while number2 < 0 or number2 > 10:
+    number = int(input("Try again! Enter a number between 0 and 10: "))
+
+while number1 <= 20 and number2 <= 20:
+    addition = number1 + number2
+    if addition > 30:
+        break
+    print("%s + %s = %s" %(number1, number2, addition))
+    number1 += 2
+    number2 += 2

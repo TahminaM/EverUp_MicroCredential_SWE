@@ -26,7 +26,6 @@ else:
 
 
 
-
 #ex 3: and + or operators
 age = int(input("Enter an age: "))
 gender = input("Type M for male or F for female: ")

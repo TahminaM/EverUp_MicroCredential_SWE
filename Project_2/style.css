@@ -33,7 +33,7 @@ html{
 }
 
 
-/* section{   padding:3rem 9%; }
+section{   padding:3rem 9%; }
 
 
 .heading{
@@ -75,8 +75,6 @@ html{
 }
 
 .title a:hover{   color: #fff; }
-*/
-
 
 
 .header{
@@ -140,7 +138,156 @@ html{
 
 
 
+@keyframes fadeLeft {
+    0%{
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+}
 
+@keyframes fadeUp {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+
+
+.home{
+   padding-top: 14rem;
+   background: url(img/home-bg1.jpg) no-repeat;        /*enter image */
+   background-size: cover;
+   background-position: center;
+   position: relative;
+} 
+
+
+.home .slides-container .slide{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    display:none;
+
+}
+
+.home .slides-container .slide.active{
+    display:flex;
+}
+
+.home .slides-container .slide .content{
+    flex: 1 1 40rem;
+    animation: fadeLeft .4s linear .4s backwards;
+}
+
+.home .slides-container .slide .content span{
+    color: #000;
+    font-size:2.5rem;
+}
+
+.home .slides-container .slide .content h3{
+    font-size:6rem;
+    color: #222;
+    padding:.5rem 0;
+}
+
+
+.home .slides-container .slide .img{
+    flex: 1 1 40rem;
+    margin: 3rem 0;
+}
+
+
+.home .slides-container .slide .img img{
+    width: 100%;
+    animation: fadeUp .4s linear;
+}
+
+.home #next-slide, .home #prev-slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+    border:0.1rem solid rgba(0,0,0,0.7);
+    text-align: center;
+    background: var(--brown);
+    font-size:2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.home #next-slide:hover, .home #prev-slide:hover{
+    background:#222;
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+
+.home #prev-slide{
+    left:2rem;
+}
+
+.home #next-slide{
+    right:2rem;
+}
+
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap:1.5rem;
+}
+
+
+.banner-container .banner{
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    border:0.1rem solid rgba(0,0,0,0.7);
+}
+
+
+.banner-container .banner img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-container .banner .content{
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+
+
+.banner-container .banner .content span{
+    color: #fff;
+    font-size:1.5rem;
+}
+
+.banner-container .banner .content h3{
+    font-size:2rem;
+    padding-top:.5rem;
+    color: #fff;
+}
+
+
+.banner-container .banner .content .btn{
+    padding: .8rem 2.5rem;
+}
+
+
+.banner-container .banner:hover img{
+    transform:scale(1.2);
+}
 
 
 

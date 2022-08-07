@@ -456,7 +456,7 @@ height:400px;
 
 .about .img{
     flex: 1 1 40rem;
-    float: left;
+    align-content: center;
     position: relative;
     top: 0px;
     left: 0px;
@@ -464,10 +464,15 @@ height:400px;
 
 
 
-.about .img img{                /* need to fix height*/
+.about .img img{                
     width: 50%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
     border:0.1rem solid rgba(0,0,0,0.7);
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    align-items: center;
 }
 
 about .content{
@@ -497,7 +502,13 @@ about .content{
     font-size: 1.7rem;
     line-height: 2;
     padding:1rem 0;
+    float: right;
 }
+
+
+
+
+
 /*Gallery section*/
 .gallery .box-container{
     display: grid;
@@ -665,9 +676,6 @@ about .content{
     line-height: 2;
 
 }
-
-
-
 
 
 

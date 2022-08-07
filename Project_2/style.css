@@ -164,6 +164,14 @@ section{   padding:3rem 9%; }
 } 
 
 
+
+#sizefix /* added banner image size*/
+{  
+width:700px;  
+height:570px;  
+} 
+
+
 .home .slides-container .slide{
     display:flex;
     align-items: center;
@@ -196,7 +204,7 @@ section{   padding:3rem 9%; }
 
 .home .slides-container .slide .img{
     flex: 1 1 40rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 
@@ -258,6 +266,15 @@ section{   padding:3rem 9%; }
     width: 100%;
     object-fit: cover;
 }
+
+
+#imagesize  /* added banner image size*/
+{  
+width:380px;  
+height:400px;  
+} 
+
+
 
 .banner-container .banner .content{
     position: absolute;

@@ -20,7 +20,7 @@ def is_divisible(x, y):
         return False
 
 
-# example 6: def function with parameters and return value
+# example 6 : def function with parameters and return value
 def sum(num1, num2):
     return num1 + num2
 
